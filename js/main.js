@@ -45,19 +45,77 @@ const colors = ["red", "green", "blue"];
 // console.log();
 // printUser(user);
 
-const product = {
-    name: "кулич", 
-    price: "200p",
-    category: "выпечка", 
-    inStock: "да"
-}
-const {name, price, category, inStock} = product;
-console.log(name, price, category, inStock);
+// const product = {
+//     name: "кулич", 
+//     price: "200p",
+//     category: "выпечка", 
+//     inStock: "да"
+// }
+// const {name, price, category, inStock} = product;
+// console.log(name, price, category, inStock);
 
-function printProduct(product) {
-    console.log(`name: ${name}`);
-    console.log(`price: ${price}`);
-    console.log(`category: ${category}`);
-    console.log(`inStock: ${inStock}`);
+// function printProduct(product) {
+//     console.log(`name: ${name}`);
+//     console.log(`price: ${price}`);
+//     console.log(`category: ${category}`);
+//     console.log(`inStock: ${inStock}`);
+// }
+// printProduct(product);
+
+
+
+
+
+
+
+
+
+// console.log("Spread для массивов");
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const combined = [...arr1, ...arr2];
+// console.log("Объединенный массив: ", combined);
+
+// const copy = [...arr1];
+// console.log("Копия массива: ", copy);
+
+// const extended = [0, ...arr1, 7, 8];
+// console.log("Расширенный массив: ", extended);
+
+// console.log("Spread для объектов");
+
+// console.log("Rest оператор");
+
+// function sum(...numbers) {
+//     return numbers.reduce((total, num) => total + num, 0);
+// }
+// console.log("Sum 1, 2, 3: ", sum(1, 2, 3));
+// console.log("Sum 1, 2, 3, 4, 5: ", sum(1, 2, 3, 4, 5));
+
+// const numbers = [10, 20, 30, 40, 50];
+// const [first, second, ...rest] = numbers;
+// console.log("Первое число:", first);
+// console.log("Второе число:", second);
+// console.log("Остальные числа:", rest);
+
+const array1 = [1, 2, 3, 4];
+const array2 = [5, 6, 7, 8];
+const combined = [...array1, ...array2];
+console.log(combined);
+
+function findMax(...rest) {
+    return Math.max(...rest)
 }
-printProduct(product);
+findMax(1, 2, 3, 4, 80, 5)
+console.log(findMax(1, 2, 3, 4, 80, 5));
+
+const object1 = {
+    name: "Ruta", 
+    age: 18
+};
+const object2 = {
+    city: "Volzhski", 
+    hobbi: "read"
+};
+const object3 = {...object1, ...object2};
+console.log(object3);
