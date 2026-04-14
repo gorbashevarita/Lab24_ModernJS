@@ -98,24 +98,48 @@ const colors = ["red", "green", "blue"];
 // console.log("Второе число:", second);
 // console.log("Остальные числа:", rest);
 
-const array1 = [1, 2, 3, 4];
-const array2 = [5, 6, 7, 8];
-const combined = [...array1, ...array2];
-console.log(combined);
+// const array1 = [1, 2, 3, 4];
+// const array2 = [5, 6, 7, 8];
+// const combined = [...array1, ...array2];
+// console.log(combined);
 
-function findMax(...rest) {
-    return Math.max(...rest)
-}
-findMax(1, 2, 3, 4, 80, 5)
-console.log(findMax(1, 2, 3, 4, 80, 5));
+// function findMax(...rest) {
+//     return Math.max(...rest)
+// }
+// findMax(1, 2, 3, 4, 80, 5)
+// console.log(findMax(1, 2, 3, 4, 80, 5));
 
-const object1 = {
-    name: "Ruta", 
-    age: 18
-};
-const object2 = {
-    city: "Volzhski", 
-    hobbi: "read"
-};
-const object3 = {...object1, ...object2};
-console.log(object3);
+// const object1 = {
+//     name: "Ruta", 
+//     age: 18
+// };
+// const object2 = {
+//     city: "Volzhski", 
+//     hobbi: "read"
+// };
+// const object3 = {...object1, ...object2};
+// console.log(object3);
+
+
+
+
+
+
+
+// import {greet, add, PI} from "./utils.js";
+// console.log("Модули");
+// console.log(greet("Алексей"));
+// console.log("5 + 3 = ", add(5, 3));
+// console.log("Значение PI: ", PI);
+
+// import {multiply as умножить } from "./utils.js";
+// console.log("4 * 7 = ", умножить(4, 7));
+
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение: ", Utils.multiply(3, 9));
+
+import { square, cube, E } from "./math.js";
+console.log(square(3));
+console.log(cube(3));
+console.log(E);
